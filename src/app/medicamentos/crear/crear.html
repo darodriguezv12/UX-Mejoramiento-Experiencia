@@ -1,0 +1,41 @@
+<div class="page">
+  <app-nav />
+
+  <main class="main">
+    <div class="form-header">
+      <h1 class="form-title">Crear Medicamento</h1>
+    </div>
+    <hr class="form-divider">
+
+    <div class="form-body">
+      <div class="form-group">
+        <label for="nombre">Nombre del Medicamento</label>
+        <input id="nombre" type="text" value="Capsaicina" placeholder="Nombre del medicamento">
+      </div>
+
+      <div class="form-group">
+        <label for="tipo">Tipo</label>
+        <div class="select-wrapper">
+          <select id="tipo">
+            <option value="dosis" selected>Dosis</option>
+            <option value="mg">Mg</option>
+            <option value="gramos">Gramos</option>
+          </select>
+          <svg class="select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 6l4 4 4-4" stroke="#3F4947" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="cantidad">Cantidad</label>
+        <input id="cantidad" type="number" value="1" min="0" placeholder="Cantidad">
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn--cancel" (click)="goBack()">Cancelar</button>
+        <a class="btn btn--save" routerLink="/medicamentos/confirmacion">Guardar</a>
+      </div>
+    </div>
+  </main>
+</div>
