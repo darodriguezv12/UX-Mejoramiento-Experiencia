@@ -1,0 +1,29 @@
+<nav class="nav">
+  <div class="nav__top">
+    <div class="nav__brand">
+      <img class="nav__logo" src="icons/icon-logo.svg" width="40" height="40" alt="">
+      <span class="nav__name">Recordamed</span>
+    </div>
+  </div>
+
+  <ul class="nav__links">
+    <li>
+      <a routerLink="/alarmas" routerLinkActive="nav__link--active"
+        [routerLinkActiveOptions]="{ exact: false }" class="nav__link">
+        <svg class="nav__icon" width="24" height="24" viewBox="11 11 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.4297 16.7578H19.1797V21.7578L23.125 24.1016L23.75 23.0859L20.4297 21.1328V16.7578ZM24.4531 11.6016L28.2812 14.8047L27.2266 16.0547L23.3594 12.8516L24.4531 11.6016ZM15.5469 11.6016L16.6016 12.8516L12.7734 16.0547L11.7188 14.8047L15.5469 11.6016ZM20 13.3984C15.8594 13.3984 12.5 16.7578 12.5 20.8984C12.5 25.0391 15.8594 28.3984 20 28.3984C24.1406 28.3984 27.5 25.0391 27.5 20.8984C27.5 16.7578 24.1406 13.3984 20 13.3984ZM20 26.7578C16.7969 26.7578 14.1797 24.1406 14.1797 20.8984C14.1797 17.6953 16.7969 15.0781 20 15.0781C23.2031 15.0781 25.8203 17.6953 25.8203 20.8984C25.8203 24.1406 23.2031 26.7578 20 26.7578Z" fill="currentColor"/>
+        </svg>
+        <span>Alarmas</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/medicamentos" routerLinkActive="nav__link--active"
+        [routerLinkActiveOptions]="{ exact: false }" class="nav__link">
+        <svg class="nav__icon" width="24" height="24" viewBox="13 12 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.75 22.5H16.6797V20H18.75V17.9297H21.25V20H23.3203V22.5H21.25V24.5703H18.75V22.5ZM25.8203 16.6797V25.8203C25.8203 26.7578 25.0781 27.5 24.1797 27.5H15.8203C14.9219 27.5 14.1797 26.7578 14.1797 25.8203V16.6797C14.1797 15.7422 14.9219 15 15.8203 15H24.1797C25.0781 15 25.8203 15.7422 25.8203 16.6797ZM24.1797 16.6797H15.8203V25.8203H24.1797V16.6797ZM25 12.5H15V14.1797H25V12.5Z" fill="currentColor"/>
+        </svg>
+        <span>Medicamentos</span>
+      </a>
+    </li>
+  </ul>
+</nav>
