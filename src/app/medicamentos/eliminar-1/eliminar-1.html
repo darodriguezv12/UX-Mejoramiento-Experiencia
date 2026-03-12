@@ -1,0 +1,58 @@
+<div class="page">
+  <app-nav />
+
+  <main class="main main--blurred">
+    <div class="header">
+      <div class="header__text">
+        <h1 class="header__title">Lista de medicamentos</h1>
+        <p class="header__subtitle">Gestiona el inventario de medicamentos.</p>
+      </div>
+      <span class="btn-crear">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Crear Medicamento
+      </span>
+    </div>
+
+    <div class="meds-grid">
+      <div class="med-card">
+        <div class="med-card__top">
+          <div class="med-card__icon">
+            <img src="icons/icon-medicamento-kit.svg" width="22" height="22" alt="">
+          </div>
+          <div class="med-card__info">
+            <span class="med-card__name">Amoxicilina</span>
+            <span class="med-card__dose">200 mg</span>
+          </div>
+        </div>
+        <div class="med-card__actions">
+          <span class="btn-icon">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+              <path d="M11.5 2.5a1.414 1.414 0 0 1 2 2L5 13H3v-2L11.5 2.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="btn-icon">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal__icon">
+        <img src="icons/icon-eliminar-verde.svg" width="21" height="27" alt="">
+      </div>
+      <h2 class="modal__title">¿Eliminar medicamento?</h2>
+      <p class="modal__desc">Esta acción no se puede deshacer. Se eliminarán también todas las alarmas asociadas a este medicamento.</p>
+      <div class="modal__actions">
+        <a class="modal__btn modal__btn--cancel" routerLink="/medicamentos/lista-1-sin-notif">Cancelar</a>
+        <a class="modal__btn modal__btn--delete" routerLink="/medicamentos/lista-0-con-notif">Eliminar</a>
+      </div>
+    </div>
+  </div>
+</div>
